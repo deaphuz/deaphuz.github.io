@@ -54,7 +54,7 @@
                     flagWaver.setWind( 2000 );
                 }
                 else {
-                    flagWaver.setWind( 100 );
+                    flagWaver.setWind( 2000 );
                 }
             },
             flag : {
@@ -134,7 +134,7 @@
         }
         $.extend( flagWaverOpts.flag, flagWaverDefaults.flag, flagOpts );
         setFlagOpts( {
-            imgSrc : flagWaverOpts.flag.imgURL || 'img/NZ.2b.png',
+            imgSrc : flagWaverOpts.flag.imgURL || 'img/obrazek.png',
             topEdge : flagWaverOpts.flag.topEdge,
             hoisting : flagWaverOpts.flag.hoisting
         } );
