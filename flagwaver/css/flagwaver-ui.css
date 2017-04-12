@@ -399,7 +399,7 @@ p, a {
 
 @media only screen and (min-width : 480px) {
     .bg-sky {
-        background-image : url('../img/Sky_over_Washington_Monument-480x640px.jpg');
+        background-image : url('../img/Sky_over_Washington_Monument-800x600px.jpg');
     }
 }
 
@@ -408,4 +408,3 @@ p, a {
         background-image : url('../img/Sky_over_Washington_Monument-1600x1200px.jpg');
     }
 }
-*/
