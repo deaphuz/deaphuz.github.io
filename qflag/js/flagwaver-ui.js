@@ -134,7 +134,7 @@
         }
         $.extend( flagWaverOpts.flag, flagWaverDefaults.flag, flagOpts );
         setFlagOpts( {
-            imgSrc : flagWaverOpts.flag.imgURL || 'http://i.imgur.com/7DYE3GC.png',
+            imgSrc : flagWaverOpts.flag.imgURL || 'img/obrazek.png',
             topEdge : flagWaverOpts.flag.topEdge,
             hoisting : flagWaverOpts.flag.hoisting
         } );
