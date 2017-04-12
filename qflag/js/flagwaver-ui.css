@@ -387,7 +387,7 @@ p, a {
 }
 
 /* //// Background Image //// */
-/*
+
 .bg-sky {
     background-attachment : fixed;
     background-color      : #566C73;
@@ -399,7 +399,7 @@ p, a {
 
 @media only screen and (min-width : 480px) {
     .bg-sky {
-        background-image : url('../img/obrazek.png');
+        background-image : url('../img/Sky_over_Washington_Monument-480x640px.jpg');
     }
 }
 
