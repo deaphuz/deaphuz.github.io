@@ -51,10 +51,10 @@
             toggleWind : function () {
                 flagWaverOpts.isWindOn = !flagWaverOpts.isWindOn;
                 if ( flagWaverOpts.isWindOn ) {
-                    flagWaver.setWind( 200 );
+                    flagWaver.setWind( 2000 );
                 }
                 else {
-                    flagWaver.setWind( 0.001 );
+                    flagWaver.setWind( 100 );
                 }
             },
             flag : {
