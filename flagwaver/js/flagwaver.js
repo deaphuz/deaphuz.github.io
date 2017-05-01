@@ -69,14 +69,14 @@
     var isDebugMode = false;
 
     // Physics settings
-    var DAMPING = 0.03,
-        DRAG    = 1 - DAMPING,
-        SLACK   = 1.2,
-        MASS    = 0.1,
-        GRAVITY = 981 * 1.4;
+    var DAMPING = 0, //0.03
+        DRAG    = 0.8
+        SLACK   = 1.009, //1.2
+        MASS    = 0.04,
+        GRAVITY = 660; //1.4
 
     // Time settings
-    var FPS        = 60,
+    var FPS        = 225,
         TIMESTEP   = 1 / FPS,
         timestep   = TIMESTEP,
         timestepSq = timestep * timestep,
@@ -85,12 +85,12 @@
 
     // Wind settings
     var wind         = true,
-        windStrength = 200,
-        windForce    = new THREE.Vector3( 0, 0, 0 );
+        windStrength = 36000, //200
+        windForce    = new THREE.Vector3( 100, 18, 0 );
 
     // Ball settings
     var ballPosition = new THREE.Vector3( 0, -45, 0 ),
-        ballSize     = 60; //40
+        ballSize     = 40; //40
 
     //
     // Simulation classes
@@ -441,10 +441,10 @@
 
     // Default flag options
     var defaultOptions = {
-        width         : 300,
-        height        : 200,
+        width         : 1600,
+        height        : 800,
         mass          : MASS,
-        levelOfDetail : 10
+        levelOfDetail : 20
     };
 
     // Default flag texture
@@ -537,11 +537,11 @@
             }
 
             // Rotate
-            if ( Util.isNumeric( transform.rotate ) ) {
+          /*  if ( Util.isNumeric( transform.rotate ) ) {
                 ctx.translate( canvas.width / 2, canvas.height / 2 );
                 ctx.rotate( transform.rotate );
                 ctx.translate( -canvas.width / 2, -canvas.height / 2 );
-            }
+            }*/
 
             // Translate
             if ( Util.isNumeric( transform.translateX ) ) {
@@ -595,7 +595,7 @@
             alphaTest : 0.5,
             color     : 0xffffff,
             specular  : 0x030303,
-            shininess : 0.001, // https://github.com/mrdoob/three.js/issues/7252
+            shininess : 0.001, // https://github.com/mrdoob/three.js/issues/7252 0.001
             metal     : false,
             side      : THREE.DoubleSide
         } );
@@ -753,8 +753,8 @@
         // texture.generateMipmaps = false;
         texture.needsUpdate = true;
         texture.anisotropy  = 16;
-        texture.minFilter   = THREE.LinearFilter;
-        texture.magFilter   = THREE.LinearFilter;
+   //     texture.minFilter   = THREE.LinearFilter;
+     //   texture.magFilter   = THREE.LinearFilter;
         texture.wrapS = texture.wrapT = THREE.ClampToEdgeWrapping;
 
         /*material = new THREE.MeshBasicMaterial( {
@@ -802,7 +802,7 @@
         else {
             transform.translateX = 0;
             transform.translateY = 0;
-            transform.swapXY     = false;
+            transform.swapXY     = true; //false
         }
 
         this.transformTexture( transform );
@@ -886,7 +886,7 @@
         }
 
         // Fixed flag constraints
-        for ( i = 0, il = fixedConstraints.length; i < il; i++ ) {
+            for ( i = 0, il = fixedConstraints.length; i < il; i++ ) {
             fixedConstraints[ i ].satisfyFixed();
         }
 
@@ -1005,8 +1005,8 @@
     //
 
     // Renderer settings
-    var poleOffset  = 300,
-        poleHeight  = 1000;
+    var poleOffset  = 400,
+        poleHeight  = 968;
 
     // Renderer variables
     var vertexShader, fragmentShader,
@@ -1019,8 +1019,8 @@
             poleGeo, poleMat, poleMesh;
 
         // Get shaders
-        vertexShader   = document.getElementById( 'vertexShaderDepth' ).textContent;
-        fragmentShader = document.getElementById( 'fragmentShaderDepth' ).textContent;
+    //    vertexShader   = document.getElementById( 'vertexShaderDepth' ).textContent;
+      //  fragmentShader = document.getElementById( 'fragmentShaderDepth' ).textContent;
 
         // Init scene
         scene     = new THREE.Scene();
@@ -1035,7 +1035,7 @@
             10000
         );
         camera.position.y = 50;
-        camera.position.z = 2000;
+        camera.position.z = 2340;
         scene.add( camera );
 
         // Init lights
@@ -1110,7 +1110,7 @@
             windStrength = value;
         }
         else {
-            windStrength = 0;
+            windStrength = value;
         }
         wind = !!windStrength;
     }
@@ -1148,14 +1148,14 @@
         if ( timestep > TIMESTEP ) { timestep = TIMESTEP; }
         timestepSq = timestep * timestep;
 
-        // windStrength = window.Math.cos( time / 7000 ) * 100 + 200;
-        // windStrength = 100;
+         windStrength = window.Math.cos( time / 70/* 7000 */ ) * 1 /* 100 */ + 200;
+         windStrength = 900;
         windForce.set(
-            window.Math.sin( time / 2000 ),
-            window.Math.cos( time / 3000 ),
-            window.Math.sin( time / 1000 )
+            window.Math.sin( time / 10000000 ), //2000
+            window.Math.cos( time / 400 ), //3000
+           window.Math.sin( time / 10000000 )   //1000
         ).normalize().multiplyScalar( windStrength );
-        // windForce.set( 2000, 0, 1000 ).normalize().multiplyScalar( windStrength );
+         windForce.set( 20000, 10, 10 ).normalize().multiplyScalar( windStrength );
 
         flag.simulate();
         render();
