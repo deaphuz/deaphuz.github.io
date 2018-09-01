@@ -1,11 +1,12 @@
 ﻿
 
 <!DOCTYPE html>
-<html>
+<html lang="pl-PL">
 <head>
 
 	<link rel="shortcut icon" type="image/png" href="https://i.imgur.com/9G5MhGK.png"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/minecraft-webfont.css"/>
 <style>
 
 /* unvisited link */
@@ -13,7 +14,7 @@ a:link {
     font-size: 90%;
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
 }
 @-webkit-keyframes hue { 
     100% { -webkit-filter:hue-rotate(360deg); }   }
@@ -24,30 +25,18 @@ a:visited {
 /* mouse over link */
 a:hover {
     color: grey;
-    font-style: italic;
+ /*  font-style: italic;*/
     text-decoration: none;
 }
 .center {
     margin: 0;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     }
-.to-na-dole {
-    margin: 0px;
-    color: white;
-    font-style: italic;
-    position: fixed;
-    text-shadow: 0 0 5px #000000;
-    font-family: 'Open Sans', serif;
-    left: 0%;
-    right: 0%;
-    top: 94%;
- -ms-transform: translate(0%, 0%);
-    transform: translate(0%, 0%);
-}
+
 </style>
 
 <div style="
@@ -76,7 +65,7 @@ width: 100%;
 height: 10%;
 left: 0px;
 top: 90%;
-z-index: 0.5;
+z-index: 2;
 background: linear-gradient(#00000000, #00000099);">
 </div>
 <!--
@@ -97,13 +86,14 @@ z-index: 1;">
 
 <div style="
     color: white;
-    position: fixed;
+    position: relative;
     top: -2%;
     text-shadow: 0px 2px 15px #000000;
     font-family: 'Open Sans', serif;
     margin: 0px;
     width: 80%;
     left: 10%;
+    z-index: -0.9;
     text-align: center;
   text-justify: inter-word;
 ">
@@ -118,7 +108,10 @@ z-index: 1;">
 z-index: 1;
  "> </a>
 </center>
-<h3 style="position: relative; height: -100%; text-decoration: none; font-weight: normal;">
+<h3 style=" /*position: relative;*/
+ height: -100%;
+  text-decoration: none;
+   font-weight: normal;">
 <center>Czym jest Mate Cuboids?</center></h3>
 Mate Cuboids to nowoczesny serwer przenoszący doświadczenie rodem z klasycznych serwerów do gry ze znajomymi/ekipą do publicznej formy oferujący przy okazji wiele usprawnień i ciekawych, nierzadko autorskich rozwiązań, m. in. walutę mającą pokrycie w złocie, zaawansowany system nawigacji, system aukcji, dedykowane warpy dla graczy, lepsze drogi, trampoliny, niestandardowy generator świata, plugin Slimefun... i inne :)
 <h3 style="
@@ -132,17 +125,6 @@ Mate Cuboids nie jest do końca serwerem wolnościowym (takim jak np. fcraft czy
 
 
 </div>
-<!--
-<div style="
-position: absolute;
-width: 10%;
-height: 30%;
-left: 50%;
-right: 50%;
-top: 30%;
-z-index: 0.7;
-">
--->
 </head>
 
 
@@ -150,15 +132,29 @@ z-index: 0.7;
 
 
 <body>
-<div class="to-na-dole">
 <center>
+<div style="
+    margin: auto;
+    color: white;
+   /*  font-style: italic;*/
+    position: fixed;
+    font-size: 150%;
+    text-shadow: 0 0 5px #000000;
+    font-family: 'Minecraft', serif;
+   left: 0%;
+    right: 0%;
+    top: 93%;
+    z-index: 3;
+ -ms-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+">
+
 <a href=https://dphz.github.io/sv/jak-zdobyc-vipa/>ranga vip</a>  
 <a href=https://imgur.com/a/hTNfOV5>screeny</a>  
 <a href=https://craftportal.pl/forum/index.php?/topic/103854-112240ssvslimefun-mate-survival-survml-czas-na-%C5%9Bwie%C5%BCy-serwer-survival/>prezentacja</a>  
 <a href=https://docs.google.com/document/d/1bEotHCPLfuwuwL_pGxShD-kZ6HjqKE-WfGhYwdvqQgA/edit?usp=sharing>etykieta</a>  
 <a href=https://discord.gg/4jDHs2D>discord</a>
-</center>
 </div>
-
+</center>
 </body>
 </html>
