@@ -1,9 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="pl-PL">
 <head>
-	<link rel="shortcut icon" type="image/png" href="https://i.imgur.com/9G5MhGK.png"/>
+  <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/9G5MhGK.png"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans"/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/minecraft-webfont.css"/>
+  <link href="http://pl.allfont.net/allfont.css?fonts=futura-normal" rel="stylesheet" type="text/css"/>
   <!--  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>-->
 <style>
 a:link {
@@ -14,6 +15,61 @@ a:link {
 }
 @-webkit-keyframes hue { 
     100% { -webkit-filter:hue-rotate(360deg); }   }
+@-webkit-keyframes colorchange {
+      0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        
+        color: #8e44ad;
+      }
+      
+      20% {
+        
+        color: #1abc9c;
+      }
+      
+      30% {
+        
+        color: #d35400;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #34495e;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+    }
 a:visited {
     color: white;
     text-decoration: none;
@@ -22,17 +78,15 @@ a:hover {
     color: grey;
     text-decoration: none;
 }
-/* zjebana klasa center .center {
-    margin: 0;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-} */
+.body {
+
+  /*  -ms-transform: translate(150%, -30%);
+    transform: translate(150%, -30%);*/
+}
 </style>
 
-<!--    GRADIENTY -->
+<!--    GRADIENTY #background: url(https://i.imgur.com/VzfHysv.jpg) 50% 50% / cover no-repeat scroll padding-box;-->
+
 <div style="
 position: fixed;
 width: 100%;
@@ -40,8 +94,115 @@ height: 100%;
 left: 0px;
 top: 0px;
 z-index: -1;
-background: url(https://i.imgur.com/VzfHysv.jpg) 50% 50% / cover no-repeat scroll padding-box;
+background-color: black;
+
 ">
+</div>
+
+<div style="
+  color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: arial;
+     font-weight: bold;
+       font-style: italic;
+       font-size: 500%;
+           z-index: 1;
+     text-shadow: 5px 5px #7f00ff;
+    ">
+6 lipca<br>
+16⁰⁰
+</div>
+<div style="
+ @-webkit-keyframes colorchange {
+      0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        
+        color: #8e44ad;
+      }
+      
+      20% {
+        
+        color: #1abc9c;
+      }
+      
+      30% {
+        
+        color: #d35400;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #6499fe;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #f980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #49f0d9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+   }
+     "> 
+     </div>
+<div style="
+  color: #000000af;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: arial;
+    line-height: 2px;
+     font-weight: bold;
+       font-style: italic;
+           z-index: 2;
+       font-size: 250%;
+
+     
+    }
+
+    ">
+<div style="
+    margin-left: 2px;
+          -webkit-animation:colorchange 20s infinite alternate;   
+    "
+> Czekamy na ciebie
+</div>
+<div style="
+margin-top: -4px;"
+> Czekamy na ciebie
+</div>
 </div>
 <div style="
 position: fixed;
@@ -90,18 +251,18 @@ background: linear-gradient(#00000000, #00000099);">
   left: 0;
   right: 0;
 
-    z-index: 3;
- -ms-transform: translate(0%, -75%);
+    z-index: 0;
+ -ms-transform: translate(0%, -65%);
     transform: translate(0%, -75%);
           
 
-top: 25%;
-   max-width: 300pt;
+top: 43%;
+   max-width: 500pt;
  ">
 </center>
 
 
-
+<!--
 <div style="padding:50px"></div>
 <div style="
 position: fixed;
@@ -114,41 +275,36 @@ padding-top: 50.25%;">
     left: -10%;
     width: 120%;
     height: 74%;
-    ">    	
+    ">      
     </iframe>
 </div>
 <p style="padding:50px"></p>
 </div>
+-->
 </head>
 
 
-
-
-
 <body>
-<center>
 <div style="
-    margin: auto;
     color: white;
-    position: fixed;
+    float: right;
     font-size: 175%;
-    text-shadow: 0 0 5px #000000;
-    font-family: 'Minecraft', serif;
-   left: 0%;
-    right: 0%;
-    
-    top: 93%;
+    text-shadow: 2px 2px 2px #004f4f;
+    text-align: right;
+    font-style: italic;  
     z-index: 3;
- -ms-transform: translate(0%, 0%);
-    transform: translate(0%, 0%);
+    margin-left: 10%;
+    position: absolute;
+    top: 40%;
+    right: 16px;
 ">
-
-<a href=https://dphz.github.io/sv/jak-zdobyc-vipa/>ranga vip</a>  
-<a href=https://imgur.com/a/hTNfOV5>screeny</a>  
-<a href=https://craftportal.pl/forum/index.php?/topic/103854-112240ssvslimefun-mate-survival-survml-czas-na-%C5%9Bwie%C5%BCy-serwer-survival/>prezentacja</a>  
-<a href=https://docs.google.com/document/d/1bEotHCPLfuwuwL_pGxShD-kZ6HjqKE-WfGhYwdvqQgA/edit?usp=sharing>regulamin</a>  
-<a href=https://dphz.github.io/sv/discord/>discord</a>
+<a href=https://dphz.github.io/sv/jak-zdobyc-vipa/>ranga vip</i></a><br>
+<a href=https://imgur.com/a/hTNfOV5>screeny</a><br>
+<a href=https://craftportal.pl/forum/index.php?/topic/103854-112240ssvslimefun-mate-survival-survml-czas-na-%C5%9Bwie%C5%BCy-serwer-survival/>prezentacja</a><br>
+<a href=https://docs.google.com/document/d/1bEotHCPLfuwuwL_pGxShD-kZ6HjqKE-WfGhYwdvqQgA/edit?usp=sharing>regulamin</a><br>
+<a href=https://dphz.github.io/sv/discord/>discord</a><br>
 </div>
-</center>
+
+
 </body>
 </html>
