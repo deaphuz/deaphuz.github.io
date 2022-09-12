@@ -346,106 +346,17 @@ a img		{ border: none; }
 .wb_container .wb_page { position: relative; box-sizing: content-box; }
 .wb_container .wb_page .wb_page_anchor { position: relative; top: 0; left: 0; display: block; }
 
-.wb_container > .wb-cs-row > .wb-cs-col {
-	width: 100%;
-}
-
 .wb_sbg		{
 	position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;
 	z-index: 1;
 }
 
-.wb-cs-clear {
-	display: block;
-	padding: 0px;
-	margin: 0px;
-	font-size: 1px;
-	line-height: 1px;
-	overflow: hidden;
-	float: none;
-	clear: both;
-	position: static;
-}
-
-.wb-cs-row {
-	box-sizing: border-box;
-	float: none;
-	clear: both;
-	width: 100%;
-}
-.wb-cs-row:after, .wb_container:after {
-	content: "";
-	display: block;
-	width: 100%;
-	height: 0;
-	clear: both;
-	visibility: hidden;
-}
-.wb-cs-col {
-	box-sizing: border-box;
-	float: left;
-}
-.wb-cs-grp {
-	box-sizing: border-box;
-}
-.wb-cs-elem {
-	position: relative;
-	box-sizing: border-box;
-}
-.wb-cs-col.wb-cs-right, .wb-cs-grp.wb-cs-right, .wb-cs-elem.wb-cs-right {
-	float: right;
-}
-.wb-site-debug .wb-cs-row {
-	background: rgba(255, 0, 0, 0.1);
-}
-.wb-site-debug .wb-cs-col {
-	background: rgba(0, 255, 0, 0.1);
-}
-.wb-site-debug .wb-cs-grp {
-	background: rgba(255, 255, 255, 0.1);
-}
-.wb-site-debug .wb-cs-elem {
-	background: rgba(0, 0, 255, 0.1);
-}
 .wb_element	{
-	position: absolute !important;
-	min-height: 64px;
-	min-width: 64px;
-	left: 0;
-	top: 0;
-	padding: 0;
-	margin: 0;
-	display: block;
-	overflow: visible;
-	box-sizing: content-box;
+	position: absolute !important; min-height: 64px; min-width: 64px; left: 0px; top: 0px;
+	padding: 0px; margin: 0px; display: block; overflow: visible; box-sizing: content-box;
 }
 .wb_anchor	{
 	position: absolute;
-}
-.wb_element.wb-cs-elem {
-	position: relative ! important;
-	box-sizing: border-box;
-	min-width: 0;
-	/*left: 0 ! important;
-	top: 0 ! important;
-	width: 100% ! important;
-	height: auto ! important;
-	min-height: 0 ! important;*/
-}
-.wb_element_shape > div.wb_shp {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-}
-.wb_element_picture > .wb_picture_wrap {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
 }
 
 .wb_table	{ border: none; border-collapse: collapse; }
@@ -456,15 +367,14 @@ a img		{ border: none; }
 
 .wb_button	{
 	display: block; padding: 0px; margin: 0px; text-align: center; text-decoration: none;
-	cursor: pointer; position: relative;
+	cursor: pointer;
 }
-.wb_button:before { content: ""; display: inline-block; vertical-align: middle; height: 100%; }
 .wb_button,
 .wb_button:hover,
 .wb_button:active,
 .wb_button:focus,
 .wb_button:visited	{ outline: none !important; }
-.wb_button span	{ display: inline-block; vertical-align: middle; padding: 0px; margin: 0px; }
+.wb_button span	{ display: block; padding: 0px; margin: 0px; }
 
 .vmenu,
 .hmenu		{
@@ -484,7 +394,7 @@ a img		{ border: none; }
 .hmenu ul li:first-child,
 .vmenu ul li:first-child { margin-top: 0 ! important; }
 .hmenu > li > ul { left: 0; top: 100%; }
-.hmenu li.over > ul, .vmenu li.over > ul { display: block; }
+.hmenu li:hover > ul, .vmenu li:hover > ul { display: block; }
 .vmenu ul a, .hmenu ul a { white-space: nowrap; max-width: 320px; overflow: hidden; text-overflow: ellipsis; }
 
 
@@ -608,7 +518,6 @@ span.ico-lang-ee, i.ico-lang-ee { background-position: -90px -60px; }
 span.ico-lang-fi, i.ico-lang-fi { background-position: -108px -108px; }
 span.ico-lang-fr, i.ico-lang-fr { background-position: -108px -216px; }
 span.ico-lang-hr, i.ico-lang-hr { background-position: -144px -216px; }
-span.ico-lang-ht, i.ico-lang-ht { background-position: -144px -240px; }
 span.ico-lang-hu, i.ico-lang-hu { background-position: -144px -252px; }
 span.ico-lang-id, i.ico-lang-id { background-position: -162px -48px; }
 span.ico-lang-it, i.ico-lang-it { background-position: -162px -240px; }
@@ -627,7 +536,6 @@ span.ico-lang-tr, i.ico-lang-tr { background-position: -360px -216px; }
 span.ico-lang-th, i.ico-lang-th { background-position: -360px -96px; }
 span.ico-lang-vn, i.ico-lang-vn { background-position: -396px -168px; }
 span.ico-lang-se, i.ico-lang-se { background-position: -342px -60px; }
-span.ico-lang-me, i.ico-lang-me { background-position: -234px -60px; }
 span.ico-lang-hk, i.ico-lang-hk { background-position: -468px -108px; }
 /* span.ico-lang-hk, i.ico-lang-hk { background-position: -144px -132px; } */
 span.ico-lang-tw, i.ico-lang-tw { background-position: -360px -276px; }
@@ -654,7 +562,6 @@ span.ico-lang-ph, i.ico-lang-ph { background-position: -288px -96px; }
 span.ico-lang-gb, i.ico-lang-gb { background-position: -468px -312px; }
 span.ico-lang-ge, i.ico-lang-ge { background-position: -126px -60px; }
 span.ico-lang-at, i.ico-lang-at { background-position: -17px -240px; }
-span.ico-lang-az, i.ico-lang-az { background-position: -18px -312px; }
 
 
 i.ico-lang-en,
@@ -864,7 +771,6 @@ i.ico-lang-ru	{ width: 18px; height: 12px }
 }
 
 .wb-store {
-	overflow: visible;
 	overflow-y: auto;
 	width: 100%;
 	height: 100%;
@@ -886,81 +792,13 @@ i.ico-lang-ru	{ width: 18px; height: 12px }
 .wb-store-thumb img {
 	max-width: 100%;
 }
-.wb-store-imgs-block {
-	float: left;
-	text-align: center;
-}
 .wb-store-image {
 	border: 1px solid #eee;
+	overflow: hidden;
 	width: 300px;
 	height: 300px;
+	float: left;
 	text-align: center;
-	display: inline-block;
-	position: relative;
-}
-.wb-store-image > img {
-	position: absolute;
-	left: 0;
-	right: 0;
-	transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-	-webkit-transition: opacity 0.3s;
-	max-width: 100%;
-}
-.wb-store-alt-images {
-	position: relative;
-	display: inline-block;
-	margin-top: 20px;
-	padding: 0 24px;
-}
-.wb-store-alt-images > div {
-	max-width: 488px;
-	overflow: hidden;
-}
-.wb-store-alt-images > span {
-	display: block;
-	width: 20px;
-	height: 40px;
-	position: absolute;
-	top: 41px;
-	cursor: pointer;
-	background-image: url('../img/store-arrow.png');
-	background-repeat: no-repeat;
-	opacity: 0.5;
-}
-.wb-store-alt-images > span:hover {
-	opacity: 0.8;
-}
-.wb-store-alt-images > .arrow-left {
-	left: 0;
-	background-position: 0 0;
-}
-.wb-store-alt-images > .arrow-right {
-	right: 0;
-	background-position: -20px 0;
-}
-.wb-store-alt-images > div > div {
-	white-space: nowrap;
-	transition: margin-left 0.3s;
-	-moz-transition: margin-left 0.3s;
-	-webkit-transition: margin-left 0.3s;
-}
-.wb-store-alt-images .wb-store-alt-img {
-	width: 110px;
-	height: 110px;
-	display: inline-block;
-	vertical-align: middle;
-	margin: 5px;
-	border: 1px solid #eee;
-	cursor: pointer;
-	box-sizing: content-box;
-}
-.wb-store-alt-images .wb-store-alt-img.active {
-	border: 3px solid #eee;
-	margin: 3px;
-}
-.wb-store-alt-images .wb-store-alt-img > img {
-	max-width: 100%;
 }
 .wb-store-nothumb {
 	font-size: 49px;
@@ -1200,12 +1038,6 @@ i.ico-lang-ru	{ width: 18px; height: 12px }
 	display: inline-block;
 }
 
-@media (max-width: 992px) {
-	.wb-tab-store .wb-store-alt-images > div {
-		max-width: 366px;
-	}
-}
-
 @media (max-width: 768px) {
 	.wb_mob_form table th, .wb_mob_form table td,.wb_mob_form table tr {
 		display: block;
@@ -1214,26 +1046,9 @@ i.ico-lang-ru	{ width: 18px; height: 12px }
 		width: 100%!important;
 	}
 	
-	.wb-mob-store .wb-store-imgs-block {
-		height: auto!important;
-		float: none!important;
-	}
-	.wb-mob-store .wb-store-alt-images {
-		padding: 0;
-	}
-	.wb-mob-store .wb-store-alt-images > span {
-		display: none!important;
-	}
-	.wb-mob-store .wb-store-alt-images > div > div {
-		white-space: normal;
-		margin-left: 0!important;
-	}
-	.wb-mob-store .wb-store-alt-images .wb-store-alt-img {
-		width: 85px;
-		height: 85px;
-	}
 	.wb-mob-store .wb-store-image {
 		width: 100%!important;
+		height: auto!important;
 		float: none!important;
 	}
 	.wb-mob-store .wb-store-image > img {
@@ -1246,119 +1061,5 @@ i.ico-lang-ru	{ width: 18px; height: 12px }
 	}
 	.wb-mob-store .wb-store-cart-table-img img {
 		max-height: 40px!important;
-	}
-}
-
-.wb-cgr {
-	box-sizing: border-box;
-	margin: 0 -15px;
-	width: auto;
-}
-
-.wb-cgr:after {
-	display: block;
-	box-sizing: border-box;
-	content: '';
-	visibility: hidden;
-	width: 100%;
-	height: 0;
-	clear: both;
-}
-
-.wb-cgc {
-	float: left;
-	box-sizing: border-box;
-	padding: 0 15px;
-	width: 100%;
-}
-
-@media (min-width: 768px) {
-	.wb-cgc-tbl-1 { width: 8.333333333333%; }
-	.wb-cgc-tbl-2 { width: 16.666666666666%; }
-	.wb-cgc-tbl-3 { width: 25%; }
-	.wb-cgc-tbl-4 { width: 33.333333333333%; }
-	.wb-cgc-tbl-5 { width: 41.666666666666%; }
-	.wb-cgc-tbl-6 { width: 50%; }
-	.wb-cgc-tbl-7 { width: 58.333333333333%; }
-	.wb-cgc-tbl-8 { width: 66.666666666666%; }
-	.wb-cgc-tbl-9 { width: 75%; }
-	.wb-cgc-tbl-10 { width: 83.333333333333%; }
-	.wb-cgc-tbl-11 { width: 91.666666666666%; }
-	.wb-cgc-tbl-12 { width: 100%; }
-}
-
-@media (min-width: 992px) {
-	.wb-cgc-dsk-1 { width: 8.333333333333%; }
-	.wb-cgc-dsk-2 { width: 16.666666666666%; }
-	.wb-cgc-dsk-3 { width: 25%; }
-	.wb-cgc-dsk-4 { width: 33.333333333333%; }
-	.wb-cgc-dsk-5 { width: 41.666666666666%; }
-	.wb-cgc-dsk-6 { width: 50%; }
-	.wb-cgc-dsk-7 { width: 58.333333333333%; }
-	.wb-cgc-dsk-8 { width: 66.666666666666%; }
-	.wb-cgc-dsk-9 { width: 75%; }
-	.wb-cgc-dsk-10 { width: 83.333333333333%; }
-	.wb-cgc-dsk-11 { width: 91.666666666666%; }
-	.wb-cgc-dsk-12 { width: 100%; }
-}
-
-@media (min-width: 1200px) {
-	.wb-cgc-tv-1 { width: 8.333333333333%; }
-	.wb-cgc-tv-2 { width: 16.666666666666%; }
-	.wb-cgc-tv-3 { width: 25%; }
-	.wb-cgc-tv-4 { width: 33.333333333333%; }
-	.wb-cgc-tv-5 { width: 41.666666666666%; }
-	.wb-cgc-tv-6 { width: 50%; }
-	.wb-cgc-tv-7 { width: 58.333333333333%; }
-	.wb-cgc-tv-8 { width: 66.666666666666%; }
-	.wb-cgc-tv-9 { width: 75%; }
-	.wb-cgc-tv-10 { width: 83.333333333333%; }
-	.wb-cgc-tv-11 { width: 91.666666666666%; }
-	.wb-cgc-tv-12 { width: 100%; }
-}
-
-.wb-map {
-	max-height: 300px;
-}
-
-@media (min-height: 400px) {
-	.wb-map {
-		max-height: 350px;
-	}
-}
-
-@media (min-height: 450px) {
-	.wb-map {
-		max-height: 400px;
-	}
-}
-
-@media (min-height: 500px) {
-	.wb-map {
-		max-height: 450px;
-	}
-}
-
-@media (min-height: 550px) {
-	.wb-map {
-		max-height: 500px;
-	}
-}
-
-@media (min-height: 600px) {
-	.wb-map {
-		max-height: 550px;
-	}
-}
-
-@media (min-height: 640px) {
-	.wb-map {
-		max-height: 600px;
-	}
-}
-
-@media (min-width: 768px) {
-	.wb-map {
-		max-height: none;
 	}
 }

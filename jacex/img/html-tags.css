@@ -1,0 +1,43 @@
+h1 {
+	font: normal bold 60px Tahoma,Geneva,sans-serif;
+	color: #ffffff;
+	text-decoration: none;
+	text-align: left;
+	line-height: 0px;
+	text-shadow: 3px 3px black;
+}
+
+h2 {
+	font: normal bold 31px 'Open Sans',sans-serif;
+	text-align: left; text-decoration: none;
+	color: #fc4817;
+	line-height: 0px;
+	text-shadow: 2px 2px black;
+}
+
+body {
+	margin: 0 auto;
+	width: 75%;
+	min-width: 800px;
+	margin-top: 80px;
+}
+
+main {
+	width: 100%;
+	font: normal 14px 'Open Sans',sans-serif;
+	text-align: left; text-decoration: none;
+	color: #e0e0e0;
+	line-height: 20px;
+	text-shadow: 1px 1px black;
+}
+
+a {
+	color: yellow;
+}
+
+aside {
+	padding-top: 60px;
+	font: normal 16px 'Open Sans',sans-serif;
+	color: #aaaaaa;
+	height: 100px;
+}

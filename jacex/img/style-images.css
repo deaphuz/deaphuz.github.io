@@ -1,0 +1,34 @@
+.img-welcome {
+	z-index: 1;
+	position: absolute;
+	margin-top: -150px;
+	width: 600px;
+}
+
+.img-hatsune-miku {
+	z-index: 1;
+	margin-left: -50px;
+	align-self: center;
+	position: absolute;
+
+	/*margin-top: -150px;*/
+}
+
+.img-dash {
+	z-index: 3;
+	margin-left: 40px;
+	margin-top: -20px;
+	width: 400px;
+	align-self: center;
+	height: auto;
+}
+
+.img-idk {
+	margin-left: 280px;
+	align: left;
+	z-index: 1;
+	position: absolute;
+	width: 310px;
+	align-self: center;
+	height: auto;
+}

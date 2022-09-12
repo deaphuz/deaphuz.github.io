@@ -1,0 +1,119 @@
+.dancing-anime {
+	margin-left: auto; 
+	margin-right: 0;
+	float: right;
+	width: 500px;
+	display: flex;
+}
+
+.crazy {
+	font: normal normal 72px 'Open Sans',sans-serif;
+	text-align: left;
+	text-decoration: none;
+	color: #ffffff;
+	line-height: 70px;
+	margin: 240px 0px 20px 0px;
+	text-shadow: 2px 2px #ff00ff;
+}
+
+.music {
+	width: 100%;
+	display: flex;
+}
+
+
+.event {
+	padding: 20px 40px 0px 0px;
+}
+
+.event-container {
+	width: 35%;
+	min-width: 100px;
+}
+
+.news-container {
+	width: 25%;
+}
+
+.news-img {
+	object-fit: cover;
+	height: 180px;
+	width: 100%;
+	
+}
+
+.news-event {
+	padding: 20px 10px 0px 0px;
+}
+
+.news-header {
+	width: 100%;
+	height: 180px;
+	padding-top: 60px;
+}
+
+.news-header-item {
+	postition: absolute;
+	height: 100px;
+}
+
+.we-recommend-header {
+	height: 80px;
+	font: normal bold 60px Tahoma,Geneva,sans-serif;
+	text-align: left;
+	color: #ffffff;
+	line-height: 70px;
+	margin: 10px 0px 0px 0px;
+}
+
+.we-recommend {
+	display: flex;
+	background: #8400ff;
+	border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+	width: 381px;
+	height: 150px;
+}
+
+.jasny {
+	font: normal oblique 24px Arial, sans-serif;
+	margin: 0 10px 0 10px ;
+	font-size: 24;
+	font-weight: 400;
+	line-height: 34px;
+	text-shadow: 3px 3px black;
+}
+
+.line {
+	margin: 1px 0 0 0;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 50%;
+    border-top: 3px dotted #545049;
+    font-size: 1px;
+    overflow: hidden;
+    line-height: 1px;
+    padding: 0;
+    background: transparent;
+    float: none;
+    position: relative;
+}
+
+.box {
+	height: 80px;
+	color: #ffffff;
+	font: normal normal 32px 'Arial',sans-serif;
+	font-weight: 500;
+	padding-left: 30px;
+	padding-top: 45px;
+	text-shadow: 2px 2px #000000;
+}
+
+.news-title {
+	color: #ffffff;
+	font: normal normal 28px 'Arial',sans-serif;
+	font-weight: 500;
+	text-shadow: 2px 2px #000000;
+}
