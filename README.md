@@ -1,2 +1,3 @@
-# dphz.github.io
-moja strona internetowa ;-;
+# deaphuz.github.io
+
+Simple web project which I create when I was at primary school
